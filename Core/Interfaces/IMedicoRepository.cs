@@ -13,6 +13,7 @@ namespace Core.Interfaces
         Task<Medico> LoginMedico(string cpf, string senha);
         Task<IEnumerable<Consulta>> ObterConsultasPorMedico(int medicoId);
         Task<IEnumerable<Medico>> GetAllAsync();
+        Task<int> DeleteAsync(int id);
     }
 
 }

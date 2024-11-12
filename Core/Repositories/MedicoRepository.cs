@@ -41,6 +41,12 @@ namespace Core.Repositories
             var sql = @"SELECT * FROM Medicos";
             return await _dbConnection.QueryAsync<Medico>(sql);
         }
+
+        public async Task<int> DeleteAsync(int id)
+        {
+            var sql = @"DELETE FROM Medicos WHERE Id = @Id";
+            return await _dbConnection.ExecuteAsync(sql, new { Id = id });
+        }
     }
 
 }

@@ -43,6 +43,10 @@ namespace Core.Services
             var medicos = await _medicoRepository.GetAllAsync();
             return _mapper.Map<IEnumerable<MedicoDTO>>(medicos);
         }
+        public async Task<int> DeleteMedicoAsync(int id)  // Implementação do método DeleteMedicoAsync
+        {
+            return await _medicoRepository.DeleteAsync(id);  // Chama o repositório para deletar o médico
+        }
     }
 
 }

@@ -14,7 +14,7 @@ namespace Core.Interfaces
         Task<IEnumerable<ConsultaDTO>> ObterConsultasPorMedico(int medicoId);
 
         Task<IEnumerable<MedicoDTO>> GetAllMedicos();
-
+        Task<int> DeleteMedicoAsync(int id);
     }
 
 }

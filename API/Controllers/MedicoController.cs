@@ -73,5 +73,19 @@ namespace API.Controllers
             var medicos = await _medicoService.GetAllMedicos();
             return Ok(medicos);
         }
+
+        /// <summary>
+        /// Deleta um médico específico pelo ID.
+        /// </summary>
+        /// <param name="id">ID do médico a ser deletado.</param>
+        /// <returns>Confirmação da exclusão ou mensagem de erro.</returns>
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteMedico(int id)
+        {
+            var result = await _medicoService.DeleteMedicoAsync(id);
+            if (result > 0)
+                return Ok("Médico deletado com sucesso");
+            return NotFound("Médico não encontrado");
+        }
     }
 }
