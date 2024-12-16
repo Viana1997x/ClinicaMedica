@@ -52,12 +52,12 @@ namespace Frontend
         private static async Task CadastrarCliente()
         {
             Console.Clear();
-            Console.WriteLine("=== Cadastro de Cliente ===\n");
+            Console.WriteLine("=== Cadastro de Cliente ===");
 
             Console.Write("Nome: ");
             var nome = Console.ReadLine();
 
-            Console.Write("CPF: ");
+            Console.Write("CPF (apenas números): ");
             var cpf = Console.ReadLine();
 
             Console.Write("Endereço: ");
@@ -72,7 +72,7 @@ namespace Frontend
             Console.Write("Senha: ");
             var senha = Console.ReadLine();
 
-            var clienteRequest = new
+            var cliente = new
             {
                 Nome = nome,
                 CPF = cpf,
@@ -84,7 +84,7 @@ namespace Frontend
 
             var response = await client.PostAsync(
                 $"{apiUrl}/Cliente",
-                new StringContent(JsonSerializer.Serialize(clienteRequest), Encoding.UTF8, "application/json")
+                new StringContent(JsonSerializer.Serialize(cliente), Encoding.UTF8, "application/json")
             );
 
             if (response.IsSuccessStatusCode)
@@ -93,12 +93,11 @@ namespace Frontend
             }
             else
             {
-                Console.WriteLine("Erro ao cadastrar cliente.");
+                Console.WriteLine("Erro ao cadastrar cliente. Detalhes: " + await response.Content.ReadAsStringAsync());
             }
 
             Console.ReadKey();
         }
-
         private static async Task CadastrarMedico()
         {
             Console.Clear();

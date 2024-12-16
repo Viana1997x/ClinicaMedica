@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{5614686B-3ADE-4B56-A958-3B2568682954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{A3986EDE-2835-415B-BE02-2043FAA304CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalloutNV", "FalloutNV\FalloutNV.csproj", "{A78CC1BA-E5CB-446A-8677-2E6CBBEFBF8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{5614686B-3ADE-4B56-A958-3B2568682954}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5614686B-3ADE-4B56-A958-3B2568682954}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5614686B-3ADE-4B56-A958-3B2568682954}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3986EDE-2835-415B-BE02-2043FAA304CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3986EDE-2835-415B-BE02-2043FAA304CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3986EDE-2835-415B-BE02-2043FAA304CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3986EDE-2835-415B-BE02-2043FAA304CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78CC1BA-E5CB-446A-8677-2E6CBBEFBF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78CC1BA-E5CB-446A-8677-2E6CBBEFBF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78CC1BA-E5CB-446A-8677-2E6CBBEFBF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78CC1BA-E5CB-446A-8677-2E6CBBEFBF8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
